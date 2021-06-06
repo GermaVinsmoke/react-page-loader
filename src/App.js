@@ -1,3 +1,5 @@
+import moment from 'moment';
+import VerticalBar from './VerticalBar';
 import logo from './logo.svg';
 import './App.css';
 
@@ -17,6 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        {/* These modules are just for showing the increase in page load */}
+        <h3>{moment().format('MMMM Do YYYY, h:mm:ss a')}</h3>
+        <VerticalBar />
       </header>
     </div>
   );
